@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nna Adejumoke Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="sidebar hide-medium hide-small" style="width: 40%">
+      <section id="welcome-section">
+        <h1>Nna Adejumoke's Portfolio</h1>
+        <div class="bgimg"></div>
+      </section>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="sidebar black animate-right xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <nav id="navbar">
+        <a
+          href="javascript:void(0)"
+          onclick="closeNav()"
+          class="button black xxxlarge display-topright"
+          style="padding: 0 12px"
+        >
+          <i class="fa fa-remove"></i>
+        </a>
+        <div class="bar-block center">
+          <a
+            href="#"
+            class="bar-item button text-grey hover-black"
+            onclick="closeNav()"
+            >Home</a
+          >
+          <a
+            href="#portfolio"
+            class="bar-item button text-grey hover-black"
+            onclick="closeNav()"
+            >Portfolio</a
+          >
+          <a
+            href="#about"
+            class="bar-item button text-grey hover-black"
+            onclick="closeNav()"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="bar-item button text-grey hover-black"
+            onclick="closeNav()"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="main padding-large" style="margin-left: 40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="button top white xxlarge text-grey hover-text-black"
+        style="width: auto; right: 0"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span>
+
+      <!-- Header -->
+      <header class="container center" style="padding: 128px 16px" id="home">
+        <h1 class="jumbo"><b>Nna Adejumoke</b></h1>
+        <p>Front-End Web Developer.</p>
+      </header>
+
+      <!-- Portfolio Section -->
+      <div class="padding-32 content" id="portfolio">
+        <h2 class="text-grey">My Portfolio</h2>
+        <hr class="opacity" />
+
+        <!-- Grid for photos -->
+        <section id="projects">
+          <div class="row-padding" style="margin: 0 -16px">
+            <div class="half">
+              <a
+                href="https://jumoken.github.io/Excellence-Univeristy/index.html"
+                target="_blank"
+              >
+                Excellence University,2022
+                <img
+                  src="images/Excellence University.jpg"
+                  class="project-tile"
+                  style="width: 100%"
+                />
+              </a>
+
+              <a
+                href="https://jumoken.github.io/GlamUp-Hair-Salon/#feature"
+                target="_blank"
+              >
+                GlamUp, 2022
+                <img
+                  src="images/Glam.JPG"
+                  class="project-tile"
+                  style="width: 100%"
+              /></a>
+
+              <a
+                href="https://jumoken.github.io/Survey-Form-For-Dance-Studio/"
+                target="_blank"
+              >
+                Survey Form For Dance Studio, 2022
+                <img
+                  src="images/dance.JPG"
+                  class="project-tile"
+                  style="width: 100%"
+                />
+              </a>
+
+              <a
+                href="https://jumoken.github.io/Men-s-Shoe-Brand-Landing-Page/"
+                target="_blank"
+              >
+                Men's Shoes Product Landing Page, 2022
+                <img
+                  src="images/walk.JPG"
+                  class="project-tile"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+            <!-- End photo grid -->
+          </div>
+        </section>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- About Section -->
+      <div class="content justify text-grey padding-32" id="about">
+        <h2>About</h2>
+        <hr class="opacity" />
+        <p>
+          I am highly innovative, I enjoy a challenge and love collaborating
+          with team members to achieve set targets. I feel confident that I have
+          the necessary skills, qualities and attributes to get up to speed and
+          make an impact in a short amount of time.
+          <!-- End About Section -->
+        </p>
+      </div>
+
+      <!-- Contact Section -->
+      <div
+        class="padding-32 content text-grey"
+        id="contact"
+        style="margin-bottom: 64px"
+      >
+        <h2>Contact Me</h2>
+        <hr class="opacity" />
+
+        <div class="section">
+          <p>
+            <i class="fa fa-envelope fa-fw xxlarge margin-right"> </i>
+            Email: nnaadejumoke@gmail.com
+          </p>
+        </div>
+
+        <p>
+          <br />
+          Lets get in touch. Send me a message:
+        </p>
+        <form action="/action_page.php">
+          <p>
+            <input
+              class="input padding-16 border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16 border"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16 border"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16 border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="button light-grey padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="container padding-64 light-grey center opacity xlarge"
+        style="margin: -24px"
+      >
+        <a
+          href="https://www.freecodecamp.org/NnaAdejumoke"
+          target="_blank"
+          id="profile-link"
+        >
+          <i class="fa fa-free-code-camp hover-opacity"></i>
+        </a>
+        <a href="https://github.com/JumokeN" target="_blank" id="profile-link">
+          <i class="fa fa-github hover-opacity"></i>
+        </a>
+
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
